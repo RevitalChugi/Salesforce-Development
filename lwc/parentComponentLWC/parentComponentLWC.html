@@ -1,0 +1,19 @@
+<template>
+    <lightning-card style="color: coral; ">
+        <lightning-input type="number" placeholder="Type A Number" onchange={handaleChange}></lightning-input>
+        <lightning-input type="text" placeholder="Enter Same Text Here..." onblur={handaleBlur}></lightning-input>
+        <c-son-component-l-w-c 
+            number={number} text={text} 
+            onclickevent={showJson} 
+            onclickviewnumber={showJson1}
+            first-value-number={newValueNumberParent} 
+            oncheckboxchange1={handleCheckbox1}
+            oncheckboxchange2={handleCheckbox2}>
+        </c-son-component-l-w-c>
+        <div>
+            <p> Name: {name}</p>
+            <p> Email: {email}</p>
+            <p> Mone: {newValueNumberParent}</p>
+        </div>
+    </lightning-card>
+</template>

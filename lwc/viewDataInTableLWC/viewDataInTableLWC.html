@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+    <lightning-input onchange={handleChange} placeholder="Start Tiping To Search..."></lightning-input>
+    <lightning-button onclick={handleClick} label="Search" style="color: red;"></lightning-button>
+    <br/><br/>
+    <lightning-datatable key-field="id" data={getProduct} columns={columsDitels}></lightning-datatable>
+    </lightning-card>
+
+</template>

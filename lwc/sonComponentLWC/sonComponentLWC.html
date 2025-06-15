@@ -1,0 +1,21 @@
+<template>
+    <lightning-card style="color: coral;">
+        <p> Number = {number} </p>
+        <p> Text: {text} </p>
+        <lightning-input type="text" onchange={handeleName} placeholder="Enter Your Name"></lightning-input>
+        <lightning-input type="email" onchange={handeleEmail} placeholder="Enter Your Email"></lightning-input>
+        <lightning-button label="Send" onclick={handleSubmit}></lightning-button>
+    </lightning-card>
+
+    <lightning-card>
+        <lightning-button label="Add Number" onclick={handeleMore}></lightning-button>
+        <lightning-input type="number" data-id="numberInput" onblur={handeleNumberChange} placeholder="Enter A Number To Add Or Less"></lightning-input>
+        <lightning-button label="Less Number" onclick={handeleLess}></lightning-button>
+    </lightning-card>
+    <lightning-card>
+        <p>CheckBox Area</p>
+        <lightning-input type="checkbox" label="Checkbox 1" onchange={handleCheckbox1}></lightning-input>
+        <lightning-input type="checkbox" label="Checkbox 2" onchange={handleCheckbox2}></lightning-input>
+    </lightning-card>
+    
+</template>
